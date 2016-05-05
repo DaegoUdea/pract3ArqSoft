@@ -1,0 +1,58 @@
+.container {
+    padding: 10px;
+    margin: 10px;
+    background: gray;
+}
+
+.left-container{
+    margin: 5px;
+    padding: 5px;
+    background: #ff0000;
+    border-radius: 25px;
+    display: inline-table;
+}
+
+.right-containter{
+    margin: 5px;
+    padding: 5px;
+    background: #ff0000;
+    border-radius: 25px;
+    display: inline-table;
+}
+
+#whiteboard{
+/*    border : 3px solid #000000;*/
+    border-radius: 20px;
+    cursor: url(../img/use151.cur), pointer;
+}
+
+#canvas-container{
+    border-radius: 20px;
+    background: white;
+}
+
+#chatlog {
+    background: #ffffff;
+    border-radius: 10px;
+    resize: none;
+    width: 100%;
+    height: 530px;  
+}
+#pencil-thickness{
+    display: inline-block;
+    width: 100px;
+}
+
+#pencil-conteiner{
+    display: inline-block;
+
+}
+
+#btn-container{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+#output-text{
+    width: 100%;
+}
