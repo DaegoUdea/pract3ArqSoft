@@ -18,7 +18,6 @@ webSocket.onerror = function (evt) {
 function onMessage(evt) {
     console.log("onMessage executed");
     var jsonAction = JSON.parse(evt.data);
-
     if (jsonAction.action == "draw") {
         drawLine(jsonAction);
     } else if (jsonAction.action == "writeToChat") {
