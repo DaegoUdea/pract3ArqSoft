@@ -4,10 +4,9 @@
     background: white;
 }
 
-.left-container{
+.left-container,.right-containter{
     margin: 5px 10px;
     padding: 10px 10px;
-    background: #ff0000;
     background: -webkit-linear-gradient(rgba(82,76,76,1), rgba(113,132,230,1));
     background: -o-linear-gradient(rgba(82,76,76,1), rgba(113,132,230,1));
     background: -moz-linear-gradient(rgba(82,76,76,1), rgba(113,132,230,1));
@@ -20,7 +19,6 @@
 .right-containter{
     margin: 5px 10px;
     padding: 10px 10px;
-    background: #ff0000;
     background: -webkit-linear-gradient(rgba(82,76,76,1), rgba(113,132,230,1));
     background: -o-linear-gradient(rgba(82,76,76,1), rgba(113,132,230,1));
     background: -moz-linear-gradient(rgba(82,76,76,1), rgba(113,132,230,1));
