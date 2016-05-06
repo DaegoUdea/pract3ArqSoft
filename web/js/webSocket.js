@@ -163,7 +163,6 @@ function clearCanvas() {
 function writeInChat(json) {
     var chatLog = document.getElementById("chatlog");
     chatLog.scrollTop = chatLog.scrollHeight;
-    console.log(json);
     chatLog.innerHTML += json.username + ": " + json.message + "\n";
 }
 
