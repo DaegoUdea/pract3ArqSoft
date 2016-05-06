@@ -14,6 +14,7 @@ webSocket.onerror = function (evt) {
 
 //Función que define como se ejecutará el flujo de la aplicación cuando un usuario 
 //envia un mensaje a los otros clientes mediante la conexión del websocket.
+//El flujo se define mediante la clave "action" contenida en un objeto json.
 function onMessage(evt) {
     console.log("onMessage executed");
     var jsonAction = JSON.parse(evt.data);
