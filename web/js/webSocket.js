@@ -132,7 +132,8 @@ function sendChatMessage() {
     var message = $("#output-text").val();
     jsonChat.action = "writeToChat";
     jsonChat.username = userName;
-    jsonChat.message = message;
+    jsonChat.message = message;    
+    $("#output-text").val(""); 
     webSocket.send(JSON.stringify(jsonChat));
 }
 
