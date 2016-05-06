@@ -37,6 +37,16 @@ webSocket.onerror = function (evt) {
     onError(evt);
 };
 
+function downloadCanvas(link, canvasId, filename) {
+    link.href = document.getElementById(canvasId).toDataURL();
+    link.download = filename;
+}
+
+document.getElementById('download-btn').addEventListener('click', function() {
+    downloadCanvas(this, 'whiteboard', 'image.png');
+}, false);
+
+
 whiteboard.addEventListener("mousedown", function (e) {
     var coordinates = findCoordinates(whiteboard, e);
     json.action = "draw";

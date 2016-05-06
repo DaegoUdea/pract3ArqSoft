@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.edu.udea.ws;
 
 import java.io.IOException;
@@ -16,10 +11,6 @@ import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
 
-/**
- *
- * @author Daego_000
- */
 @ServerEndpoint("/whiteboard")
 public class EchoServer {
 
@@ -27,6 +18,7 @@ public class EchoServer {
 
     @OnMessage
     public void onMessage(String message, Session peer) throws IOException, EncodeException {
+        //Se envia un mensaje a todos los clientes conectados a la sesion.
         for (Session p : peers) {
             p.getBasicRemote().sendObject(message);
         }
@@ -34,11 +26,13 @@ public class EchoServer {
 
     @OnClose
     public void onClose(Session peer) {
+        //Elimina un cliente de la sesion.
         peers.remove(peer);
     }
 
     @OnOpen
     public void onOpen(Session peer) {
+        //Añade un cliente a la sesion.
         peers.add(peer);
     }
 

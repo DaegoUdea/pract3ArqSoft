@@ -19,12 +19,12 @@
                         <div id="pencil-conteiner">
                             <label for="color" >Color: </label>
                             <input id="color" name="color" type="color"/>
-                            <label for="color" >Pincel: </label>
+                            <label for="color" >Pencil size: </label>
                             <input id="pencil-thickness" type="range" min="1" max="10" value="1"/>
                         </div>
                         <div id="btn-container">
-                            <input id="clean-btn" class="btn btn-success btn-sm" type="button" value="Clean" onclick="sendClearCanvas();"/>
-                            <input id="download-btn" class="btn btn-success btn-sm"type="button" value="Download"/>                            
+                            <a id="clean-btn" class="btn btn-success btn-sm" onclick="sendClearCanvas();">Clean</a>
+                            <a id="download-btn" class="btn btn-success">Download</a>
                         </div>
 
                     </div>
